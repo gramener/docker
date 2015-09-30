@@ -1,15 +1,21 @@
-Docker setups
-=============
+Gramex setup
+============
 
-This repo has Dockerfiles to install Gramex
+Follow these instructions to install the Gramener Visualisation Server.
 
 Installation
 ------------
 
-1. Install Docker on a Linux system. See the instructions for your OS at
-   <https://docs.docker.com/installation/>
-2. Build the container: `sudo docker build --tag gramener/gramex:0.17rc https://github.com/gramener/docker.git#:gramex-0.17rc-postgresql`
-3. Run the instance: `sudo docker run -i -t gramener/gramex:0.17rc`
+Install Docker on a Linux system. See the instructions for your OS at
+<https://docs.docker.com/installation/>
+
+Build the container:
+
+    sudo docker build --tag gramener/gramex:0.17rc https://github.com/gramener/docker.git#:gramex-0.17rc-postgresql
+
+Run the instance:
+
+    sudo docker run -i -t gramener/gramex:0.17rc
 
 This instance has a Linux and PostgreSQL user named `gramex` with password
 `gramex`
@@ -17,8 +23,14 @@ This instance has a Linux and PostgreSQL user named `gramex` with password
 Test the setup
 --------------
 
-1. Run `sudo service postgresql start`. (If prompted, the password is `gramex`)
-2. Run `psql -c 'CREATE DATABASE test'`. The response should be `CREATE DATABASE`
+1. Start PostgreSQL. (If prompted, the password is `gramex`.)
+
+        sudo service postgresql start
+
+2. Create a database. The response should be `CREATE DATABASE`.
+
+        psql -c 'CREATE DATABASE test'
+
 3. Run `python gramex/gramex.pyc`. You should get the following license message:
 
         No license file was found.
