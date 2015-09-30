@@ -8,8 +8,8 @@ Installation
 
 1. Install Docker on a Linux system. See the instructions for your OS at
    <https://docs.docker.com/installation/>
-2. Build the container: `sudo docker build --tag gramener/gramex https://github.com/gramener/docker.git#:gramex-0.17rc-postgresql`
-3. Run the instance: `sudo docker run -i -t gramex/gramex`
+2. Build the container: `sudo docker build --tag gramener/gramex:0.17rc https://github.com/gramener/docker.git#:gramex-0.17rc-postgresql`
+3. Run the instance: `sudo docker run -i -t gramener/gramex:0.17rc`
 
 This instance has a Linux and PostgreSQL user named `gramex` with password
 `gramex`
