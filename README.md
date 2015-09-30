@@ -21,7 +21,10 @@ Test the setup
 2. Run `psql -c 'CREATE DATABASE test'`. The response should be `CREATE DATABASE`
 3. Run `python gramex/gramex.pyc`. You should get the following license message:
 
-    No license file was found.
-    Machine: Linux xxxxxxxxxxxx 3.13.0-48-generic #80-Ubuntu SMP Thu Mar 12 11:16:15 UTC 2015 x86_64 x86_64
-    Location: /home/gramex/gramex/LICENSE
-    Visit http://127.0.0.1:8888 for a license
+        No license file was found.
+        Machine: Linux xxxxxxxxxxxx (long machine name / ID)
+        Location: /home/gramex/gramex/LICENSE
+        Visit http://127.0.0.1:8888 for a license
+
+4. The message you get has your machine ID. Email the message to
+   <license@gramener.com> for a license.
